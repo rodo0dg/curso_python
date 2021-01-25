@@ -1,0 +1,9 @@
+If we run a REPL interpreter in this directory, it wont find path_test.py as it doesn't live here.
+
+we can use 
+
+import sys
+sys.path.append('not_searched') 
+import path_test
+
+and now we can import the library path_test
